@@ -1,0 +1,35 @@
+* { box-sizing: border-box; }
+body { margin: 0; font-family: Arial, sans-serif; background: #f5f7fb; color: #1f2937; }
+.app { max-width: 1200px; margin: auto; padding: 24px; }
+.hero { display: flex; justify-content: space-between; align-items: center; gap: 16px; margin-bottom: 24px; background: linear-gradient(135deg,#111827,#2563eb); color: white; padding: 24px; border-radius: 20px; }
+.hero h1 { margin: 0 0 8px; }
+.cartBtn, button { border: none; border-radius: 12px; padding: 12px 16px; cursor: pointer; background: #2563eb; color: white; font-weight: 600; display: inline-flex; align-items: center; gap: 8px; }
+.secondary { background: #e5e7eb; color: #111827; }
+.danger { background: #ef4444; }
+.controls { display: grid; grid-template-columns: repeat(auto-fit,minmax(220px,1fr)); gap: 16px; margin-bottom: 16px; }
+.control, .rangeBox { background: white; padding: 14px; border-radius: 16px; display: flex; align-items: center; gap: 10px; box-shadow: 0 8px 24px rgba(0,0,0,0.06); }
+.control input, .control select, .checkoutGrid input, textarea { width: 100%; border: none; outline: none; font-size: 14px; background: transparent; }
+.resultsBar { display: flex; justify-content: space-between; align-items: center; margin: 16px 0; }
+.grid { display: grid; grid-template-columns: repeat(auto-fit,minmax(240px,1fr)); gap: 18px; }
+.card { background: white; border-radius: 20px; padding: 18px; box-shadow: 0 10px 28px rgba(0,0,0,0.07); }
+.emoji { font-size: 48px; }
+.row { display: flex; justify-content: space-between; align-items: center; margin: 10px 0; }
+.rating { display: flex; align-items: center; gap: 4px; }
+.muted { color: #6b7280; }
+.inStock { color: #16a34a; font-weight: 600; }
+.outStock { color: #dc2626; font-weight: 600; }
+.checkoutWrap { display: flex; justify-content: center; }
+.panel { width: 100%; max-width: 760px; background: white; border-radius: 20px; padding: 24px; box-shadow: 0 10px 28px rgba(0,0,0,0.07); }
+.cartItem { display: flex; justify-content: space-between; align-items: center; padding: 12px 0; border-bottom: 1px solid #e5e7eb; }
+.qtyControls { display: flex; align-items: center; gap: 10px; }
+.qtyControls button { padding: 8px 10px; }
+.actions { display: flex; justify-content: space-between; gap: 12px; margin-top: 20px; }
+.checkoutGrid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin-bottom: 16px; }
+.checkoutGrid input, textarea { background: #f9fafb; padding: 14px; border-radius: 12px; border: 1px solid #e5e7eb; }
+.payment, .summary, .feedback { background: #f9fafb; padding: 16px; border-radius: 16px; margin: 14px 0; }
+.payment { display: flex; align-items: center; gap: 10px; }
+.success { text-align: center; }
+@media (max-width: 700px) {
+  .hero, .resultsBar, .actions { flex-direction: column; align-items: stretch; }
+  .checkoutGrid { grid-template-columns: 1fr; }
+}

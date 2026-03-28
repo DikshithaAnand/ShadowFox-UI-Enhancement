@@ -135,12 +135,6 @@ http://localhost:3000
 
 ---
 
-## 📸 Preview
-
-![Project Screenshot](./screenshot.png)
-
----
-
 ## 📊 Key Highlights
 
 - Improved product discovery  
